@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import Doctors from "./Doctors/Doctors";
 import Services from "./Services/Services";
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
     <>
       <Container>
         <Services></Services>
+        <Doctors></Doctors>
       </Container>
     </>
   );
