@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Row, Spinner } from "react-bootstrap";
+import { Row, Spinner, Container } from "react-bootstrap";
 import Service from "../Service/Service";
 
 const Services = () => {
@@ -11,7 +11,9 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div className="services-container">
+    <Container>
+        <h1 className="text-center pt-5 text-primary">Our Services</h1>
+        <hr className="text-danger" />
       {services.length === 0 ? (
         <Spinner animation="grow" variant="warning" />
       ) : (
@@ -21,7 +23,7 @@ const Services = () => {
           ))}
         </Row>
       )}
-    </div>
+    </Container>
   );
 };
 
