@@ -32,8 +32,8 @@ const Banner = () => {
             <Row md={8} className="">
               <Col className="mb-md-5 pb-md-5 mb-sm-0 pb-sm-0">
                 <h1 className="text-primary display-6 fw-bolder pb-md-2">
-                  
-Your Health is Our Top <span className="text-danger">Priority</span>{" "}
+                  Your Health is Our Top{" "}
+                  <span className="text-danger">Priority</span>{" "}
                 </h1>
                 <p className="lead-md text-dark pb-md-2 bg-opacity-50 bg-info px-md-2 rounded-pill">
                   People can go weeks, months, and even years without taking
@@ -51,8 +51,8 @@ Your Health is Our Top <span className="text-danger">Priority</span>{" "}
             <Row md={8} className="">
               <Col className="mb-md-5 pb-md-5 mb-sm-0 pb-sm-0">
                 <h1 className="text-primary display-6 fw-bolder pb-md-2">
-                  
-Exceptional Care for  <span className="text-danger">Women</span>{" "}
+                  Exceptional Care for{" "}
+                  <span className="text-danger">Women</span>{" "}
                 </h1>
                 <p className="lead-md text-dark pb-md-2 bg-opacity-50 bg-info px-md-2 rounded-pill">
                   People can go weeks, months, and even years without taking

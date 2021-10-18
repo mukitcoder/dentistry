@@ -11,8 +11,8 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <Container>
-        <h1 className="text-center pt-5 text-primary">Our Services</h1>
+    <Container id="services">
+        <h1 className="text-center pt-5 text-primary">OUR DENTAL SERVICES</h1>
         <hr className="text-danger" />
       {services.length === 0 ? (
         <Spinner animation="grow" variant="warning" />

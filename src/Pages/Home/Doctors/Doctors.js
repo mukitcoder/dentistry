@@ -6,16 +6,17 @@ import doctor3 from "../../../images/doctor-3.jpg";
 
 const Doctors = () => {
   return (
-    <div>
-      <h2>Our Dentist</h2>
+    <div id="doctors">
+      <h1 className="text-center pt-5 text-primary">Our Specialized and Experienced Dentist</h1>
+      <hr className="text-danger" />
       <Row xs={1} md={3} className="g-4" className="text-center">
         <Col>
           <Card>
-            <Card.Img variant="top" src={doctor1}/>
+            <Card.Img variant="top" src={doctor1} />
             <Card.Body>
               <Card.Title className="display-6">Dr. John Melborn</Card.Title>
               <Card.Text className="lead fw-bold">
-              Prosthodontics Dentist
+                Prosthodontics Dentist
               </Card.Text>
             </Card.Body>
           </Card>
@@ -26,7 +27,7 @@ const Doctors = () => {
             <Card.Body>
               <Card.Title className="display-6">Dr. Ena Dicrosa</Card.Title>
               <Card.Text className="lead fw-bold">
-              Aesthetic Dentistry
+                Aesthetic Dentistry
               </Card.Text>
             </Card.Body>
           </Card>
@@ -37,7 +38,7 @@ const Doctors = () => {
             <Card.Body>
               <Card.Title className="display-6">Dr. Addison Smith</Card.Title>
               <Card.Text className="lead fw-bold">
-              Gastroenterologists
+                Gastroenterologists
               </Card.Text>
             </Card.Body>
           </Card>

@@ -7,16 +7,13 @@ import Services from "./Services/Services";
 const Home = () => {
   return (
     <>
-    <Banner></Banner>
-      <Container>
-      {/* <Row md={12}>
-          <Col>
-          <h1>Our Services</h1>
-          </Col>
-      </Row> */}
-        <Services></Services>
-        <Doctors></Doctors>
-      </Container>
+      <div id="home">
+        <Banner></Banner>
+        <Container>
+          <Services></Services>
+          <Doctors></Doctors>
+        </Container>
+      </div>
     </>
   );
 };
