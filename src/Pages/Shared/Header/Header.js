@@ -1,9 +1,11 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
 import logo from "../../../images/logo.png";
 
 const Header = () => {
+    const {user, logOut} = useAuth();
   return (
     <div>
       <Navbar bg="primary" expand="lg" sticky="top">
