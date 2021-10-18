@@ -3,6 +3,7 @@ import { Container, Nav, Navbar, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import logo from "../../../images/logo.png";
+import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
     const {user, logOut} = useAuth();
@@ -18,16 +19,16 @@ const Header = () => {
               style={{ maxHeight: "200px" }}
               navbarScroll
             >
-              <Nav.Link className="text-white" as={Link} to="/home#home">
+              <Nav.Link className="text-white" as={HashLink} to="/home#home">
                 Home
               </Nav.Link>
-              <Nav.Link className="text-white" as={Link} to="/home#services">
+              <Nav.Link className="text-white" as={HashLink} to="/home#services">
                 Services
               </Nav.Link>
-              <Nav.Link className="text-white" as={Link} to="/home#doctors">
+              <Nav.Link className="text-white" as={HashLink} to="/home#doctors">
                 Dentist
               </Nav.Link>
-              <Nav.Link className="text-white" as={Link} to="#action2">
+              <Nav.Link className="text-white" as={HashLink} to="/appointment">
                 Appointment
               </Nav.Link>
               {

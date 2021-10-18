@@ -9,6 +9,7 @@ import Booking from "./Pages/Booking/Booking";
 import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./contexts/AuthProvider";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import Appointment from "./Pages/Appointment/Appointment";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/appointment">
+              <Appointment></Appointment>
             </Route>
             <Route path="/login">
               <Login></Login>
