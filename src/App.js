@@ -8,6 +8,7 @@ import NotFound from "./Pages/NotFound/NotFound";
 import Booking from "./Pages/Booking/Booking";
 import Login from "./Pages/Login/Login/Login";
 import AuthProvider from "./contexts/AuthProvider";
+import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
@@ -28,9 +29,9 @@ function App() {
             <Route path="/services">
               <Services></Services>
             </Route>
-            <Route path="/booking/:serviceId">
+            <PrivateRoute path="/booking/:serviceId">
               <Booking></Booking>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

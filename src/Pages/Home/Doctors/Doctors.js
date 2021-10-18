@@ -9,7 +9,7 @@ const Doctors = () => {
     <div id="doctors">
       <h1 className="text-center pt-5 text-primary">Our Specialized and Experienced Dentist</h1>
       <hr className="text-danger" />
-      <Row xs={1} md={3} className="g-4" className="text-center">
+      <Row xs={1} md={3} className="g-4 text-center">
         <Col>
           <Card>
             <Card.Img variant="top" src={doctor1} />
