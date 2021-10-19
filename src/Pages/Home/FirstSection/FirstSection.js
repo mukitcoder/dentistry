@@ -13,7 +13,7 @@ import {
 const FirstSection = () => {
   return (
     <div>
-      <Row className="mt-5 g-4" md={3}>
+      <Row className="mt-5 g-4" md={3} xs={1}>
         <Col>
           <Card className="text-center text-white body-color">
             <Card.Body className="">

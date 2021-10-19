@@ -12,7 +12,7 @@ const Doctors = () => {
       <Row xs={1} md={3} className="g-4 text-center">
         <Col>
           <Card className="shadow-lg">
-            <Card.Img variant="top" src={doctor1} />
+            <Card.Img className="animate__animated animate__bounceInLeft animate__delay-2s	2s" variant="top" src={doctor1} />
             <Card.Body>
               <Card.Title className="display-6">Dr. John Melborn</Card.Title>
               <Card.Text className="lead fw-bold">
@@ -34,7 +34,7 @@ const Doctors = () => {
         </Col>
         <Col>
           <Card className="shadow-lg">
-            <Card.Img variant="top" src={doctor3} />
+            <Card.Img className="animate__animated animate__bounceInRight animate__delay-2s	2s" variant="top" src={doctor3} />
             <Card.Body>
               <Card.Title className="display-6">Dr. Addison Smith</Card.Title>
               <Card.Text className="lead fw-bold">

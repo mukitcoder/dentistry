@@ -51,7 +51,7 @@ const Footer = () => {
             </InputGroup>
           </Col>
         </Row>
-        <Col className="d-flex justify-content-between align-items-center">
+        <Col className="d-md-flex justify-content-between align-items-center">
         <p>© 2021 Dentistry Company Inc. All rights reserved.</p>
         <p>Created By Abdullah Al Mukit</p>
         <div>
