@@ -3,6 +3,8 @@ import { Card, Col, Row } from "react-bootstrap";
 import "./FirstSection.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+    faAmericanSignLanguageInterpreting,
+  faHeartbeat,
   faTeeth,
   faTeethOpen,
   faTooth,
@@ -36,7 +38,7 @@ const FirstSection = () => {
             <Card.Body className="">
               <Card.Title className="fw-bold fs-3">
                 {" "}
-                <FontAwesomeIcon className="me-3" icon={faTooth} />
+                <FontAwesomeIcon className="me-3" icon={faAmericanSignLanguageInterpreting} />
                 New Technology
               </Card.Title>
               <Card.Text className="lead">
@@ -55,7 +57,7 @@ const FirstSection = () => {
             <Card.Body className="">
               <Card.Title className="fw-bold fs-3">
                 {" "}
-                <FontAwesomeIcon className="me-3" icon={faTooth} />
+                <FontAwesomeIcon className="me-3" icon={faHeartbeat} />
                 Accept Insurance
               </Card.Title>
               <Card.Text className="lead">

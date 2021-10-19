@@ -7,11 +7,11 @@ const Service = ({ service }) => {
   return (
     <>
       <Col>
-        <Card>
+        <Card className="shadow-lg"> 
           <Card.Img variant="top" src={img} />
           <Card.Body>
-            <Card.Title>{serviceName}</Card.Title>
-            <Card.Text>{description.substring(0, 150)}...</Card.Text>
+            <Card.Title className="text-primary fw-bolder fs-4">{serviceName}</Card.Title>
+            <Card.Text className="lead">{description.substring(0, 150)}...</Card.Text>
             <Link to={`/booking/${id}`}>
             <Button>{btnName}</Button>
             </Link>

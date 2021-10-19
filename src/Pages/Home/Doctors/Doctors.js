@@ -7,11 +7,11 @@ import doctor3 from "../../../images/doctor-3.jpg";
 const Doctors = () => {
   return (
     <div id="doctors">
-      <h1 className="text-center pt-5 text-primary">Our Specialized and Experienced Dentist</h1>
+      <h1 className="text-center pt-5 text-primary fw-bolder my-5">Our Specialized and Experienced Dentist</h1>
       <hr className="text-danger" />
       <Row xs={1} md={3} className="g-4 text-center">
         <Col>
-          <Card>
+          <Card className="shadow-lg">
             <Card.Img variant="top" src={doctor1} />
             <Card.Body>
               <Card.Title className="display-6">Dr. John Melborn</Card.Title>
@@ -22,7 +22,7 @@ const Doctors = () => {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card className="shadow-lg">
             <Card.Img variant="top" src={doctor2} />
             <Card.Body>
               <Card.Title className="display-6">Dr. Ena Dicrosa</Card.Title>
@@ -33,7 +33,7 @@ const Doctors = () => {
           </Card>
         </Col>
         <Col>
-          <Card>
+          <Card className="shadow-lg">
             <Card.Img variant="top" src={doctor3} />
             <Card.Body>
               <Card.Title className="display-6">Dr. Addison Smith</Card.Title>

@@ -3,6 +3,8 @@ import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import useAuth from "../../../hooks/useAuth";
 import regiImage from "../../../images/register.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 const Register = () => {
   const { signInUsingGoogle } = useAuth();
@@ -68,14 +70,12 @@ const Register = () => {
               </div>
 
               <div className="my-2">
-                <Link to="/login">Already have an account?</Link>
+                <Link className=" fw-bold  text-decoration-none text-success fs-5" to="/login">Already have an account?</Link>
               </div>
             </Form>
-            <Button className="my-2" onClick={signInUsingGoogle}>
-              Google Sign In
-            </Button>
-            <br />
-            <Button onClick={signInUsingGithub}>Github Sign In</Button>
+            <Button variant="outline-primary" className="my-2 px-3" onClick={signInUsingGoogle}> <FontAwesomeIcon className="me-2" icon={faGoogle} />Google Sign In</Button>
+          <br />
+          <Button variant="outline-dark" className="my-2 px-3"  onClick={signInUsingGithub}><FontAwesomeIcon className="me-2" icon={faGithub} />Github Sign In</Button>
           </Col>
 
           <Col md={6}>
