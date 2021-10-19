@@ -14,7 +14,7 @@ const Appointment = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className="g-4">
           <div className=" py-5">
             <h1 className="text-center">Make An Appointment</h1>
           </div>

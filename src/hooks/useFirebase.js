@@ -2,6 +2,7 @@ import {
   getAuth,
   signInWithPopup,
   GoogleAuthProvider,
+  GithubAuthProvider ,
   signOut,
   onAuthStateChanged,
 } from "firebase/auth";
@@ -25,6 +26,17 @@ const useFirebase = () => {
     .finally(()=>setIsLoading(false))
   };
 
+
+
+  const signInUsingGithub = ()=>{
+    setIsLoading(true);
+    const githubProvider = new GithubAuthProvider();
+
+    signInWithPopup(auth, githubProvider).then((result) => {
+      setUser(result.user);
+    })
+    .finally(()=>setIsLoading(false))
+  }
   useEffect(()=>{
      const unsubscribed= onAuthStateChanged(auth, user=>{
           if(user){
@@ -46,6 +58,7 @@ const useFirebase = () => {
     user,
     isLoading,
     signInUsingGoogle,
+    signInUsingGithub,
     logOut,
   };
 };
