@@ -6,7 +6,7 @@ import logo from "../../../images/logo.png";
 import { HashLink } from 'react-router-hash-link';
 
 const Header = () => {
-    const {user, logOut} = useAuth();
+    const {user, logOut, photoURL} = useAuth();
   return (
     <div>
       <Navbar bg="primary" expand="lg" sticky="top">
@@ -31,14 +31,18 @@ const Header = () => {
               <Nav.Link className="text-white" as={HashLink} to="/appointment">
                 Appointment
               </Nav.Link>
+              <Navbar.Text className="ms-3 ">
+                <img width="30px" className="img-fluid rounded-circle" src= {user?.photoURL} alt="" />
+              </Navbar.Text>
+              <Navbar.Text className="mx-3 ">
+                <a className="text-white" href="#login">{user?.displayName}</a>
+              </Navbar.Text>
               {
                   user?.email? 
-                  <Button onClick={logOut} variant="dark">Sign out </Button>:
+                  <Button className="text-white fw-bold" onClick={logOut} variant="danger">Sign out </Button>:
                   <Nav.Link className="text-white" as={Link} to="/login">Sign In </Nav.Link>
               }
-              <Navbar.Text className="ms-2">
-                Signed in as: <a href="#login">{user?.displayName}</a>
-              </Navbar.Text>
+              
             </Nav>
           </Navbar.Collapse>
         </Container>
