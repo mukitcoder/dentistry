@@ -12,6 +12,7 @@ import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
 import Appointment from "./Pages/Appointment/Appointment";
 import Register from "./Pages/Login/Register/Register";
 import Footer from "./Pages/Shared/Footer/Footer";
+import About from "./Pages/About/About";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/services">
               <Services></Services>
+            </Route>
+            <Route path="/about">
+              <About></About>
             </Route>
             <PrivateRoute path="/booking/:id">
               <Booking></Booking>

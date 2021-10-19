@@ -33,6 +33,9 @@ const Header = () => {
               <Nav.Link className="text-white" as={HashLink} to="/appointment">
                 Appointment
               </Nav.Link>
+              <Nav.Link className="text-white" as={HashLink} to="/about">
+                About Us
+              </Nav.Link>
               <Navbar.Text className="ms-3 ">
                 <img width="30px" className="img-fluid rounded-circle" src= {user?.photoURL} alt="" />
               </Navbar.Text>
