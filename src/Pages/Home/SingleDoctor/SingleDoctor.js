@@ -5,6 +5,7 @@ import docSImg from '../../../images/single-doctor.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHandPointRight } from '@fortawesome/free-solid-svg-icons';
 
+// Single Doctor section
 const SingleDoctor = () => {
     return (
         <div>

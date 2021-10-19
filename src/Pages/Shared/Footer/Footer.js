@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import footerImg from "../../../images/logo.png";
 
+// Footer Section
+
 const Footer = () => {
   return (
     <div>

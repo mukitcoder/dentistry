@@ -6,6 +6,8 @@ import regiImage from "../../../images/register.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+// Register Section
+
 const Register = () => {
   const { signInUsingGoogle } = useAuth();
   const { signInUsingGithub } = useAuth();

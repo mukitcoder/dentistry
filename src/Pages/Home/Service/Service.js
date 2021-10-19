@@ -3,7 +3,9 @@ import { Card, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import 'animate.css';
 
+// Service Card
 const Service = ({ service }) => {
+  // destructuring
   const { serviceName, description, img, btnName, id } = service;
   return (
     <>

@@ -6,6 +6,8 @@ import loginImage from '../../../images/login.jpg';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 
+// Login Section
+
 const Login = () => {
   const { signInUsingGoogle } = useAuth();
   const { signInUsingGithub } = useAuth();

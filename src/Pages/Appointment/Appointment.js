@@ -10,6 +10,8 @@ import {
 import { Link } from "react-router-dom";
 import appointImage from "../../images/appointment.jpg";
 
+// Appointment form
+
 const Appointment = () => {
   return (
     <>
@@ -51,6 +53,7 @@ const Appointment = () => {
               <Button>Submit</Button>
             </Link>
           </Col>
+          {/* side image */}
           <Col md={6}>
             <img className="img-fluid" src={appointImage} alt="" />
           </Col>

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './NotFound.css'
 
+// Not found page
 const NotFound = () => {
     return (
         <div className="not-found">

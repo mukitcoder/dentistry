@@ -18,16 +18,19 @@ const useFirebase = () => {
   const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
 
+  // For Email and Password
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
+  // For Handle Email and Password
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
   };
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
+  // For Resgistration
   const handleRegistration = (e) => {
     e.preventDefault();
     if (password.length < 6) {
@@ -38,6 +41,8 @@ const useFirebase = () => {
     //   setError('Password should be at leasts')
     //   return;
     // }
+
+    // Create User for email and password
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
         setUser(result.user);
@@ -47,15 +52,18 @@ const useFirebase = () => {
       });
   };
 
+  // handle sign in
   const handleSignInWithEmailAndPassword = (e) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {
-        setUser(result.user)
+        setUser(result.user);
       })
       .catch(() => {
         setError("Please Check Your Email/Password");
       });
   };
+
+  // google sign in
   const signInUsingGoogle = () => {
     setIsLoading(true);
     const googleProvider = new GoogleAuthProvider();
@@ -67,6 +75,7 @@ const useFirebase = () => {
       .finally(() => setIsLoading(false));
   };
 
+  // github sign in
   const signInUsingGithub = () => {
     setIsLoading(true);
     const githubProvider = new GithubAuthProvider();
@@ -90,6 +99,7 @@ const useFirebase = () => {
     return () => unsubscribed;
   }, []);
 
+  // for user logout
   const logOut = () => {
     setIsLoading(true);
     signOut(auth)

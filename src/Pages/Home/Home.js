@@ -6,6 +6,7 @@ import FirstSection from "./FirstSection/FirstSection";
 import Services from "./Services/Services";
 import SingleDoctor from "./SingleDoctor/SingleDoctor";
 
+// Home Section
 const Home = () => {
   return (
     <>

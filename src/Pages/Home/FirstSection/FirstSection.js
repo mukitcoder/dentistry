@@ -10,6 +10,7 @@ import {
   faTooth,
 } from "@fortawesome/free-solid-svg-icons";
 
+// Three card section
 const FirstSection = () => {
   return (
     <div>

@@ -5,6 +5,8 @@ import useAuth from "../../../hooks/useAuth";
 import logo from "../../../images/logo.png";
 import { HashLink } from 'react-router-hash-link';
 
+// Header Section
+
 const Header = () => {
     const {user, logOut} = useAuth();
   return (

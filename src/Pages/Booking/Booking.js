@@ -4,15 +4,17 @@ import { useParams } from "react-router";
 import { Link } from "react-router-dom";
 
 const Booking = () => {
+  // useParams to get id
   const { id } = useParams();
   const [service, setService] = useState([]);
-
+// for useeffect load data
   useEffect(() => {
     fetch(`/dentalServices.json`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);
 
+  // find service id
   const booked = service.find((dental) => dental.id === id);
   return (
     <>
