@@ -4,6 +4,7 @@ import Banner from "./Banner";
 import Doctors from "./Doctors/Doctors";
 import FirstSection from "./FirstSection/FirstSection";
 import Services from "./Services/Services";
+import SingleDoctor from "./SingleDoctor/SingleDoctor";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
           <FirstSection></FirstSection>
           <Services></Services>
           <Doctors></Doctors>
+          <SingleDoctor></SingleDoctor>
         </Container>
       </div>
     </>

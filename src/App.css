@@ -4,4 +4,5 @@
     /* background-attachment: fixed; */
     /* background-size: cover; */
     /* background-blend-mode: lighten; */
+    overflow-x: hidden;
 } 

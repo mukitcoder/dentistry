@@ -4,4 +4,30 @@
 }
 .body-color:hover{
     background-color:#1DBFCC;
+    transform: scale(1.1);
+}
+
+
+
+.body-color2{
+    background-color:#E86548;
+    transition: 0.5s;
+}
+.body-color2:hover{
+    background-color:#1DBFCC;
+    transform: scale(1.1);
+}
+
+
+.body-color3{
+    background-color:#456483;
+    transition: 0.5s;
+}
+.body-color3:hover{
+    background-color:#1DBFCC;
+    transform: scale(1.1);
+}
+
+.read{
+    cursor: pointer;
 }
