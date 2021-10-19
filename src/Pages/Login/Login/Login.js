@@ -7,6 +7,10 @@ import loginImage from '../../../images/login.jpg';
 const Login = () => {
   const { signInUsingGoogle } = useAuth();
   const { signInUsingGithub } = useAuth();
+  const { handleEmailChange } = useAuth();
+  const { handlePasswordChange } = useAuth();
+  const {handleSignInWithEmailAndPassword} = useAuth();
+  const { error } = useAuth();
   return (
       <>
     <Container className="mt-5">
@@ -15,10 +19,10 @@ const Login = () => {
       </div>
       <Row className="g-4">
         <Col md={6}>
-          <Form>
+          <Form onSubmit={handleSignInWithEmailAndPassword}>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
+              <Form.Control onBlur={handleEmailChange} type="email" placeholder="Enter email" />
               <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
               </Form.Text>
@@ -26,7 +30,7 @@ const Login = () => {
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
+              <Form.Control onBlur={handlePasswordChange} type="password" placeholder="Password" />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formBasicCheckbox">
               <Form.Check type="checkbox" label="I agree to platform's Terms of service and Privacy statement" />
@@ -34,6 +38,9 @@ const Login = () => {
             <Button variant="primary" type="submit">
               Submit
             </Button>
+            <div className="mt-3">
+                  <p className="lead text-danger fw-bold">{error}</p>
+              </div>
 
             <div className="my-2">
                 <Link to="/register">Need to Sign Up ?</Link>
