@@ -10,6 +10,7 @@ const Service = ({ service }) => {
   return (
     <>
       <Col>
+      {/* card section */}
         <Card className="shadow-lg animate__animated animate__bounceInUp animate__delay-2s	2s">
           <Card.Img variant="top" src={img} />
           <Card.Body>
