@@ -4,7 +4,7 @@
 
 ## Project Overview:
 
-The theme is built for medical practices, dentists, doctors, surgeons, hospitals, health clinics, paediatrics, psychiatrist, psychiatry, stomatology, chiropractor, veterinary clinics and other medical related practices
+The website is built for medical practices, dentists, doctors, surgeons, hospitals, health clinics, paediatrics, psychiatrist, psychiatry, stomatology, chiropractor, veterinary clinics and other medical related practices
   
   ### My Work:
   
